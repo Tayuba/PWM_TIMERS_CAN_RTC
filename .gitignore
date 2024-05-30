@@ -1,0 +1,30 @@
+# Ignore ELF files
+*.elf
+
+# Ignore binaries
+*.bin
+
+# Ignore object files
+*.o
+*.obj
+
+# Ignore libraries
+*.lib
+*.a
+*.so
+*.dll
+
+# Ignore executables
+*.exe
+*.out
+
+# Ignore build directories
+/build/
+/bin/
+/obj/
+
+# Ignore specific tools outputs (adjust as necessary)
+*.map
+*.lst
+*.srec
+*.hex
