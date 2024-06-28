@@ -1,0 +1,10 @@
+21:00:11 **** Incremental Build of configuration Debug for project lower_to_upper_letters_Via_USART ****
+make -j16 all 
+arm-none-eabi-size  lower_to_upper_letters_Via_USART.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6188	     16	   1640	   7844	   1ea4	lower_to_upper_letters_Via_USART.elf
+Finished building: default.size.stdout
+ 
+
+21:00:11 Build Finished. 0 errors, 0 warnings. (took 194ms)
+

@@ -1,0 +1,6 @@
+../Core/Src/app.c:28:5:main	16	static
+../Core/Src/app.c:53:6:SystemClockConfig	4	static
+../Core/Src/app.c:57:6:UART2_Init	8	static
+../Core/Src/app.c:77:6:HAL_UART_RxCpltCallback	24	static
+../Core/Src/app.c:92:9:Convert_to_Capital	16	static
+../Core/Src/app.c:99:6:Error_handler	4	static

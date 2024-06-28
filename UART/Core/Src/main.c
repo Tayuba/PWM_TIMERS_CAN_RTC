@@ -56,7 +56,7 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-char msg[] = "Hello Ayuba!\n";
+char msg[] = "Hello Ayuba Monnie!\n";
 
 /* USER CODE END 0 */
 
