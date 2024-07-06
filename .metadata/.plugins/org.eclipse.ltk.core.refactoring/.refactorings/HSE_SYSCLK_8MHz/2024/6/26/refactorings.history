@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HSE_SYSCLK_8MHz/lower_to_upper_letters_Via_USART.ioc&apos; to &apos;HSE_SYSCLK_8MHz.ioc&apos;" description="Rename resource &apos;lower_to_upper_letters_Via_USART.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="lower_to_upper_letters_Via_USART.ioc" name="HSE_SYSCLK_8MHz.ioc" stamp="1719611549745" updateReferences="true"/>
+</session>

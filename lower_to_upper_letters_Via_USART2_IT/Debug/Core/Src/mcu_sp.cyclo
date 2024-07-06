@@ -1,2 +1,0 @@
-../Core/Src/mcu_sp.c:11:6:HAL_MspInit	1
-../Core/Src/mcu_sp.c:31:6:HAL_UART_MspInit	1
