@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="RCC_APB1_APB2_Clock_Source"/>
+		<item key="selection" value="HAL_UART_RxCpltCallback"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="HAL_UART_RxCpltCallback"/>
+			<item value="HAL_TIM_Base_Start_IT(TIM_HandleTypeDef *htim);"/>
+			<item value="TIM6"/>
+			<item value="HAL_TIM_Base_Start"/>
+			<item value="TIM6_DAC"/>
+			<item value="TIM"/>
+			<item value="HAL_TIM_Base_Init"/>
+			<item value="RCC_PLL_Config"/>
+			<item value="RCC_PLL_Clock_Source"/>
+			<item value="RCC_HSI_Config"/>
+			<item value="RCC_Oscillator_Type"/>
+			<item value="RCC_System_Clock_Type"/>
 			<item value="RCC_APB1_APB2_Clock_Source"/>
 			<item value="RCC_AHB_Clock_Source"/>
 			<item value="RCC_System_Clock_Source"/>
-			<item value="RCC_System_Clock_Type"/>
-			<item value="CC_System_Clock_Type"/>
-			<item value="RCC_HSE_Config"/>
-			<item value="RCC_Oscillator_Type"/>
-			<item value="RCC_CR_HSEBYP_Msk"/>
-			<item value="RCC_HSI_Config"/>
-			<item value="main"/>
 		</list>
 		<list key="replacehistory">
 		</list>

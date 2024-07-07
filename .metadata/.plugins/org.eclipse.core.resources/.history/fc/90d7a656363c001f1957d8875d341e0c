@@ -1,0 +1,24 @@
+/*
+ * interruptIT.h
+ *
+ *  Created on: Jul 7, 2024
+ *      Author: Ayuba Tahiru
+ */
+
+#ifndef INC_INTERRUPTIT_H_
+#define INC_INTERRUPTIT_H_
+
+
+/*
+ * interrupts.h
+ *
+ *  Created on: July 6, 2024
+ *      Author: Ayuba Tahiru
+ */
+//#include "stm32f4xx_hal.h"
+#include <app.h>
+
+
+
+
+#endif /* INC_INTERRUPTIT_H_ */
