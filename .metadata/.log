@@ -1335,3 +1335,6 @@ java.lang.Exception: Resource '/PLL_SYSCLK' does not exist.
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-07-06 02:17:34.296
 !MESSAGE Indexed 'PLL_SYSCLK_HSE' (33 sources, 135 headers) in 1.31 sec: 13,501 declarations; 52,954 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.36%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-07-06 11:24:51.446
+!MESSAGE Indexed 'TIME_BASE_100Ms' (21 sources, 81 headers) in 1.05 sec: 4,422 declarations; 18,427 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0088%)

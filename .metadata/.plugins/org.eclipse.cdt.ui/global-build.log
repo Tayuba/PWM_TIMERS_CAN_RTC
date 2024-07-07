@@ -1,28 +1,21 @@
-02:27:15 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSE ****
+04:55:21 **** Incremental Build of configuration Debug for project TIME_BASE_100Ms ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/app.d" -MT"Core/Src/app.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app.o"
-arm-none-eabi-gcc -o "PLL_SYSCLK_HSE.elf" @"objects.list"   -mcpu=cortex-m4 -T"T:\PWM_TIMERS_CAN_RTC\PLL_SYSCLK_HSE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PLL_SYSCLK_HSE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PLL_SYSCLK_HSE.elf
+arm-none-eabi-gcc "../Core/Src/app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/app.d" -MT"Core/Src/app.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app.o"
+arm-none-eabi-gcc -o "TIME_BASE_100Ms.elf" @"objects.list"   -mcpu=cortex-m4 -T"T:\PWM_TIMERS_CAN_RTC\TIME_BASE_100Ms\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIME_BASE_100Ms.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIME_BASE_100Ms.elf
  
-arm-none-eabi-size  PLL_SYSCLK_HSE.elf 
-arm-none-eabi-objdump -h -S PLL_SYSCLK_HSE.elf  > "PLL_SYSCLK_HSE.list"
+arm-none-eabi-size  TIME_BASE_100Ms.elf 
+arm-none-eabi-objdump -h -S TIME_BASE_100Ms.elf  > "TIME_BASE_100Ms.list"
    text	   data	    bss	    dec	    hex	filename
-  11168	     92	   1972	  13232	   33b0	PLL_SYSCLK_HSE.elf
+   3424	     12	   1660	   5096	   13e8	TIME_BASE_100Ms.elf
 Finished building: default.size.stdout
  
-Finished building: PLL_SYSCLK_HSE.list
+Finished building: TIME_BASE_100Ms.list
  
-02:27:21 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSE ****
+04:55:48 **** Incremental Build of configuration Debug for project TIME_BASE_100Ms ****
 make -j16 all 
-arm-none-eabi-size  PLL_SYSCLK_HSE.elf 
+arm-none-eabi-size  TIME_BASE_100Ms.elf 
    text	   data	    bss	    dec	    hex	filename
-  11168	     92	   1972	  13232	   33b0	PLL_SYSCLK_HSE.elf
-Finished building: default.size.stdout
- 
-02:27:23 **** Incremental Build of configuration Debug for project PLL_SYSCLK_HSE ****
-make -j16 all 
-arm-none-eabi-size  PLL_SYSCLK_HSE.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11168	     92	   1972	  13232	   33b0	PLL_SYSCLK_HSE.elf
+   3424	     12	   1660	   5096	   13e8	TIME_BASE_100Ms.elf
 Finished building: default.size.stdout
  
