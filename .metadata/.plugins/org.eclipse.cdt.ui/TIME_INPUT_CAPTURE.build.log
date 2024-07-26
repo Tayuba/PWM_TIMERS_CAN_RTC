@@ -1,0 +1,10 @@
+18:52:41 **** Incremental Build of configuration Debug for project TIME_INPUT_CAPTURE ****
+make -j16 all 
+arm-none-eabi-size  TIME_INPUT_CAPTURE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27008	    468	   2084	  29560	   7378	TIME_INPUT_CAPTURE.elf
+Finished building: default.size.stdout
+ 
+
+18:52:41 Build Finished. 0 errors, 0 warnings. (took 137ms)
+

@@ -1,2 +1,7 @@
 1720338606113	Delete 3 resources
 1720338716595	Delete 2 resources
+1720815647950	Delete resource 'TIME_INPUT_CAPTURE/Core/Src/app.c'
+1720815672785	Delete resource 'TIME_INPUT_CAPTURE/Core/Src/interrupt.c'
+1720815706473	Delete resource 'TIME_INPUT_CAPTURE/Core/Src/msp.c'
+1720815725227	Delete resource 'TIME_INPUT_CAPTURE/Core/Inc/app.h'
+1720815748026	Delete resource 'TIME_INPUT_CAPTURE/Core/Inc/interrupt.h'
