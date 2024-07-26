@@ -1,18 +1,10 @@
-05:42:28 **** Incremental Build of configuration Debug for project TIMER_OUTPUT_CAPTURE ****
+23:26:40 **** Incremental Build of configuration Debug for project TIMER_OUTPUT_CAPTURE ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/app.d" -MT"Core/Src/app.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app.o"
-arm-none-eabi-gcc "../Core/Src/msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/msp.d" -MT"Core/Src/msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/msp.o"
-arm-none-eabi-gcc -o "TIMER_OUTPUT_CAPTURE.elf" @"objects.list"   -mcpu=cortex-m4 -T"T:\PWM_TIMERS_CAN_RTC\TIMER_OUTPUT_CAPTURE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_OUTPUT_CAPTURE.map" -Wl,--gc-sections -static -Wl,--no-warn-rwx-segment  -u _printf_float -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: TIMER_OUTPUT_CAPTURE.elf
- 
 arm-none-eabi-size  TIMER_OUTPUT_CAPTURE.elf 
-arm-none-eabi-objdump -h -S TIMER_OUTPUT_CAPTURE.elf  > "TIMER_OUTPUT_CAPTURE.list"
    text	   data	    bss	    dec	    hex	filename
-  27320	    484	   2084	  29888	   74c0	TIMER_OUTPUT_CAPTURE.elf
+  25448	    484	   2076	  28008	   6d68	TIMER_OUTPUT_CAPTURE.elf
 Finished building: default.size.stdout
  
-Finished building: TIMER_OUTPUT_CAPTURE.list
- 
 
-05:42:29 Build Finished. 0 errors, 0 warnings. (took 813ms)
+23:26:40 Build Finished. 0 errors, 0 warnings. (took 138ms)
 

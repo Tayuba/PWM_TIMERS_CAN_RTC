@@ -1,9 +1,8 @@
-../Core/Src/app.c:34:5:main	3
-../Core/Src/app.c:89:6:SystemClock_Config	7
-../Core/Src/app.c:176:6:SystemClock_Config_HSE	7
-../Core/Src/app.c:259:6:LSE_Configuration	1
-../Core/Src/app.c:276:6:HAL_TIM_IC_CaptureCallback	4
-../Core/Src/app.c:290:6:Timer2_Init	6
-../Core/Src/app.c:334:6:GPIO_Init	1
-../Core/Src/app.c:342:6:UART2_Init	2
-../Core/Src/app.c:363:6:Error_handler	1
+../Core/Src/app.c:36:5:main	5
+../Core/Src/app.c:82:6:SystemClock_Config	7
+../Core/Src/app.c:169:6:SystemClock_Config_HSE	7
+../Core/Src/app.c:252:7:HAL_TIM_OC_DelayElapsedCallback	5
+../Core/Src/app.c:280:6:Timer2_Init	6
+../Core/Src/app.c:324:6:GPIO_Init	1
+../Core/Src/app.c:332:6:UART2_Init	2
+../Core/Src/app.c:353:6:Error_handler	1

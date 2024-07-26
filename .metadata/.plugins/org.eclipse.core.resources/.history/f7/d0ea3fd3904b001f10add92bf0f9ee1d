@@ -46,27 +46,29 @@ int main(void){
 
  	Timer2_Init();
 
+ 	LSE_Configuration();
+
+
 
  	// Start timer Interrupt
+ 	if(HAL_TIM_OC_Start_IT(&htimer2, TIM_CHANNEL_1) != HAL_OK){
+ 		Error_handler();
+ 	}
 
-	if(HAL_TIM_OC_Start_IT(&htimer2, TIM_CHANNEL_1) != HAL_OK){
-		Error_handler();
-	}
+ 	if(HAL_TIM_OC_Start_IT(&htimer2, TIM_CHANNEL_2) != HAL_OK){
+ 		Error_handler();
+ 	}
 
-	if(HAL_TIM_OC_Start_IT(&htimer2, TIM_CHANNEL_2) != HAL_OK){
-		Error_handler();
-	}
+ 	if(HAL_TIM_OC_Start_IT(&htimer2, TIM_CHANNEL_3) != HAL_OK){
+ 		Error_handler();
+ 	}
 
-	if(HAL_TIM_OC_Start_IT(&htimer2, TIM_CHANNEL_3) != HAL_OK){
-		Error_handler();
-	}
-
-	if(HAL_TIM_OC_Start_IT(&htimer2, TIM_CHANNEL_4) != HAL_OK){
-		Error_handler();
-	}
-
+ 	if(HAL_TIM_OC_Start_IT(&htimer2, TIM_CHANNEL_4) != HAL_OK){
+ 		Error_handler();
+ 	}
 
 
+ 	HAL_TIM_IC_Start_IT(&htimer2, TIM_CHANNEL_1);
 
  	while(1);
 
@@ -249,30 +251,47 @@ void SystemClock_Config_HSE(uint8_t freq){
 }
 
 
-void  HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim){
+void LSE_Configuration(void){
+	// Variable to select RCC Internal/External Oscillator (HSE, HSI, LSE and LSI) types
+#if 0
+	RCC_OscInitTypeDef osc_init;
+
+	osc_init.OscillatorType = RCC_OSCILLATORTYPE_LSI; // Clock source selected
+	osc_init.LSIState = RCC_LSI_ON; // LSE is ON
+
+	if(HAL_RCC_OscConfig(&osc_init) != HAL_OK){
+		Error_handler();
+	}
+
+#endif
+	HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_HSE, RCC_MCODIV_4);
+}
+
+
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
 	// TIM_CHANNEL1 Toggle with Frequency 500Hz
 	if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_1) {
-		ccr_content = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
-		__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_1, (ccr_content + pulse1_value));
+		ccr_content = HAL_TIM_ReadCapturedValue(&htim, TIM_CHANNEL_1);
+		__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_1, ccr_content + pulse1_value);
 	}
 
 	// TIM_CHANNEL2 Toggle with Frequency 1000Hz
 	if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_2) {
-		ccr_content = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_2);
-		__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_2, (ccr_content + pulse2_value));
+		ccr_content = HAL_TIM_ReadCapturedValue(&htim, TIM_CHANNEL_2);
+		__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_2, ccr_content + pulse2_value);
 
 	}
 
 	// TIM_CHANNEL3 Toggle with Frequency 2000Hz
 	if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_3) {
-		ccr_content = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_3);
-		__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_3, (ccr_content + pulse3_value));
+		ccr_content = HAL_TIM_ReadCapturedValue(&htim, TIM_CHANNEL_3);
+		__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_3, ccr_content + pulse3_value);
 	}
 
 	// TIM_CHANNEL4 Toggle with Frequency 4000Hz
 	if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_4) {
-		ccr_content = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_4);
-		__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_4, (ccr_content + pulse4_value));
+		ccr_content = HAL_TIM_ReadCapturedValue(&htim, TIM_CHANNEL_4);
+		__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_4, ccr_content + pulse4_value);
 	}
 
 }
