@@ -1,0 +1,9 @@
+2024-07-27 00:29:54,276 [INFO] MainUpdater:2873 - connection check result : 10
+2024-07-27 00:29:54,361 [INFO] McuFinderGlobals:76 - Set McuFinderConnectedMode to true
+2024-07-27 00:29:54,362 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2024-07-27 00:29:54,362 [INFO] FinderPluginLoader:95 - Searching for filters in installed packs
+2024-07-27 00:29:55,006 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2024-07-27 00:29:55,006 [INFO] DetailPanel:341 - Set advertising image to C:/Users/user/STM32Cube/Repository/\en.prom-stm32h7rs-mcu-finder.jpg
+2024-07-27 00:29:59,711 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2024-07-27 00:29:59,748 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2024-07-27 00:29:59,748 [INFO] DetailPanel:341 - Set advertising image to C:/Users/user/STM32Cube/Repository/\en.prom-stm32h7rs-mcu-finder.jpg

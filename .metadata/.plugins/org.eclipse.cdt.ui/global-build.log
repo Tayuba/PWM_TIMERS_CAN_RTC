@@ -1,21 +1,21 @@
-23:26:33 **** Incremental Build of configuration Debug for project TIMER_OUTPUT_CAPTURE ****
+19:07:27 **** Incremental Build of configuration Debug for project TIMER_OUTPUT_COMPARE_PWM_LED_DIM ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/app.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/app.d" -MT"Core/Src/app.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/app.o"
-arm-none-eabi-gcc -o "TIMER_OUTPUT_CAPTURE.elf" @"objects.list"   -mcpu=cortex-m4 -T"T:\PWM_TIMERS_CAN_RTC\TIMER_OUTPUT_CAPTURE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_OUTPUT_CAPTURE.map" -Wl,--gc-sections -static -Wl,--no-warn-rwx-segment  -u _printf_float -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: TIMER_OUTPUT_CAPTURE.elf
+arm-none-eabi-gcc -o "TIMER_OUTPUT_COMPARE_PWM_LED_DIM.elf" @"objects.list"   -mcpu=cortex-m4 -T"T:\PWM_TIMERS_CAN_RTC\TIMER_OUTPUT_COMPARE_PWM_LED_DIM\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_OUTPUT_COMPARE_PWM_LED_DIM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_OUTPUT_COMPARE_PWM_LED_DIM.elf
  
-arm-none-eabi-size  TIMER_OUTPUT_CAPTURE.elf 
-arm-none-eabi-objdump -h -S TIMER_OUTPUT_CAPTURE.elf  > "TIMER_OUTPUT_CAPTURE.list"
+arm-none-eabi-size  TIMER_OUTPUT_COMPARE_PWM_LED_DIM.elf 
+arm-none-eabi-objdump -h -S TIMER_OUTPUT_COMPARE_PWM_LED_DIM.elf  > "TIMER_OUTPUT_COMPARE_PWM_LED_DIM.list"
    text	   data	    bss	    dec	    hex	filename
-  25448	    484	   2076	  28008	   6d68	TIMER_OUTPUT_CAPTURE.elf
+  10960	     12	   1740	  12712	   31a8	TIMER_OUTPUT_COMPARE_PWM_LED_DIM.elf
 Finished building: default.size.stdout
  
-Finished building: TIMER_OUTPUT_CAPTURE.list
+Finished building: TIMER_OUTPUT_COMPARE_PWM_LED_DIM.list
  
-23:26:40 **** Incremental Build of configuration Debug for project TIMER_OUTPUT_CAPTURE ****
+19:07:31 **** Incremental Build of configuration Debug for project TIMER_OUTPUT_COMPARE_PWM_LED_DIM ****
 make -j16 all 
-arm-none-eabi-size  TIMER_OUTPUT_CAPTURE.elf 
+arm-none-eabi-size  TIMER_OUTPUT_COMPARE_PWM_LED_DIM.elf 
    text	   data	    bss	    dec	    hex	filename
-  25448	    484	   2076	  28008	   6d68	TIMER_OUTPUT_CAPTURE.elf
+  10960	     12	   1740	  12712	   31a8	TIMER_OUTPUT_COMPARE_PWM_LED_DIM.elf
 Finished building: default.size.stdout
  

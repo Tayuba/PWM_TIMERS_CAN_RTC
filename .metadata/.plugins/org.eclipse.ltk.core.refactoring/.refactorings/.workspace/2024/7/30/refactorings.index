@@ -3,3 +3,4 @@
 1721950433291	Delete resource 'TIMER_OUTPUT_CAPTURE/Core/Src/stm32f4xx_it.c'
 1721950441772	Delete resource 'TIMER_OUTPUT_CAPTURE/Core/Inc/stm32f4xx_it.h'
 1721950447099	Delete resource 'TIMER_OUTPUT_CAPTURE/Core/Inc/main.h'
+1722033331890	Rename resource 'TIMER_OUTPUT_CAPTURE'

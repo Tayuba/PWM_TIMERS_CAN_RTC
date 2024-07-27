@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := TIMER_OUTPUT_CAPTURE
+BUILD_ARTIFACT_NAME := TIMER_OUTPUT_COMPARE_TOGGLE
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-TIMER_OUTPUT_CAPTURE.elf \
+TIMER_OUTPUT_COMPARE_TOGGLE.elf \
 
 MAP_FILES += \
-TIMER_OUTPUT_CAPTURE.map \
+TIMER_OUTPUT_COMPARE_TOGGLE.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-TIMER_OUTPUT_CAPTURE.list \
+TIMER_OUTPUT_COMPARE_TOGGLE.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: TIMER_OUTPUT_CAPTURE.elf secondary-outputs
+main-build: TIMER_OUTPUT_COMPARE_TOGGLE.elf secondary-outputs
 
 # Tool invocations
-TIMER_OUTPUT_CAPTURE.elf TIMER_OUTPUT_CAPTURE.map: $(OBJS) $(USER_OBJS) T:\PWM_TIMERS_CAN_RTC\TIMER_OUTPUT_CAPTURE\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TIMER_OUTPUT_CAPTURE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"T:\PWM_TIMERS_CAN_RTC\TIMER_OUTPUT_CAPTURE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_OUTPUT_CAPTURE.map" -Wl,--gc-sections -static -Wl,--no-warn-rwx-segment  -u _printf_float -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TIMER_OUTPUT_COMPARE_TOGGLE.elf TIMER_OUTPUT_COMPARE_TOGGLE.map: $(OBJS) $(USER_OBJS) T:\PWM_TIMERS_CAN_RTC\TIMER_OUTPUT_CAPTURE\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TIMER_OUTPUT_COMPARE_TOGGLE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"T:\PWM_TIMERS_CAN_RTC\TIMER_OUTPUT_CAPTURE\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_OUTPUT_COMPARE_TOGGLE.map" -Wl,--gc-sections -static -Wl,--no-warn-rwx-segment  -u _printf_float -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-TIMER_OUTPUT_CAPTURE.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "TIMER_OUTPUT_CAPTURE.list"
+TIMER_OUTPUT_COMPARE_TOGGLE.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "TIMER_OUTPUT_COMPARE_TOGGLE.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) TIMER_OUTPUT_CAPTURE.elf TIMER_OUTPUT_CAPTURE.list TIMER_OUTPUT_CAPTURE.map default.size.stdout
+	-$(RM) TIMER_OUTPUT_COMPARE_TOGGLE.elf TIMER_OUTPUT_COMPARE_TOGGLE.list TIMER_OUTPUT_COMPARE_TOGGLE.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

@@ -1,0 +1,10 @@
+00:37:14 **** Incremental Build of configuration Debug for project TIMER_OUTPUT_COMPARE_TOGGLE ****
+make -j16 all 
+arm-none-eabi-size  TIMER_OUTPUT_COMPARE_TOGGLE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25448	    484	   2076	  28008	   6d68	TIMER_OUTPUT_COMPARE_TOGGLE.elf
+Finished building: default.size.stdout
+ 
+
+00:37:14 Build Finished. 0 errors, 0 warnings. (took 140ms)
+

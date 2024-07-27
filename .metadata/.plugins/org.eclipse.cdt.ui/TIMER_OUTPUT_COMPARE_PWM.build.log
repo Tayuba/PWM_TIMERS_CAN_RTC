@@ -1,0 +1,10 @@
+14:16:32 **** Incremental Build of configuration Debug for project TIMER_OUTPUT_COMPARE_PWM ****
+make -j16 all 
+arm-none-eabi-size  TIMER_OUTPUT_COMPARE_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12672	     44	   1732	  14448	   3870	TIMER_OUTPUT_COMPARE_PWM.elf
+Finished building: default.size.stdout
+ 
+
+14:16:32 Build Finished. 0 errors, 0 warnings. (took 138ms)
+
